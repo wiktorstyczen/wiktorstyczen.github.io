@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
-<title>Wiktor Styczeń</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  {
+body {
   font-family: 'Lato', sans-serif;
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
+  height: 0%;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
 }
 
@@ -52,6 +50,7 @@
 }
 
 @media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
@@ -59,51 +58,29 @@
   right: 35px;
   }
 }
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
 </style>
-<head>
- <!-- The overlay -->
+</head>
+<body>
+
 <div id="myNav" class="overlay">
-
-  <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
   <div class="overlay-content">
     <a href="#">About</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
   </div>
-
 </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
 
-<!-- Use any element to open/show the overlay navigation menu -->
-<span onclick="openNav()">☰</span>
-  </div>
-</div>
-  </head>
-  <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">365 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     
 </body>
 </html>
