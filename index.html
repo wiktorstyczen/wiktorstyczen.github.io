@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="pl">
+<title>Wiktor Styczeń</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
 }
 
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</head>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
 .overlay {
   height: 0%;
   width: 100%;
@@ -59,9 +76,7 @@ body {
   }
 }
 </style>
-</head>
 <body>
-
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -71,16 +86,21 @@ body {
     <a href="#">Contact</a>
   </div>
 </div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
-     
+
+
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<span style="font-size:30px;cursor:pointer;margin-left:10px;" onclick="openNav()">&#9776; </span>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">35 days left</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
+
 </body>
 </html>
