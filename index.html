@@ -72,12 +72,13 @@ body, html {height: 100%}
   <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#">Informacje</a>
+    <a href="#">Usługi</a>
+    <a href="#">Kontakt</a>
   </div>
 </div>
+</div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
   </head>
   <body>
 
@@ -94,5 +95,15 @@ body, html {height: 100%}
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
   </div>
 </div>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+    
+</script>
 </body>
 </html>
