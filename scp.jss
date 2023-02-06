@@ -1,4 +1,4 @@
-const apiKey = "beba20f04dc80650e27862052f0c8f5b";
+const apiKey = "f0585eaa0c34fcfd63e9a8e02e4bb6fe";
       const city = "Kielce";
 
       async function getWeather() {
