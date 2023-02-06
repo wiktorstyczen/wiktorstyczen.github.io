@@ -1,5 +1,5 @@
 const apiKey = "f0585eaa0c34fcfd63e9a8e02e4bb6fe";
-      const city = "Kielce";
+      const city = "New York";
 
       async function getWeather() {
         const response = await fetch(
