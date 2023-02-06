@@ -3,7 +3,7 @@ const apiKey = "beba20f04dc80650e27862052f0c8f5b";
 
       async function getWeather() {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${beba20f04dc80650e27862052f0c8f5b}`
         );
         const data = await response.json();
 
