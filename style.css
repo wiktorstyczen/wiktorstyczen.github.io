@@ -13,3 +13,11 @@ footer {
   display: flex;
   align-items: center;
 }
+
+nav {
+  text-align: center;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  display: flex;
+}
