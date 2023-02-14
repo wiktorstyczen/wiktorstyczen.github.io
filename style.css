@@ -9,7 +9,7 @@ footer {
   text-align: center;
 }
 
-#discord {
+.discord {
   display: flex;
   align-items: center;
 }
