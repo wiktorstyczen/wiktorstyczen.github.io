@@ -7,14 +7,15 @@
 
 footer {
   text-align: center;
+  color: white;
 }
 
-.discord {
+#discord {
   display: flex;
   align-items: center;
 }
 
-nav {
+#menu {
   text-align: center;
   font-size: large;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
