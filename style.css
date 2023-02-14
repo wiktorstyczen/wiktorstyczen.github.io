@@ -8,3 +8,8 @@
 footer {
   text-align: center;
 }
+
+#discord {
+  display: flex;
+  align-items: center;
+}
