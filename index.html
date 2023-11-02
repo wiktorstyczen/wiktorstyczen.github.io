@@ -3,95 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakiernia Samochodowa XYZ</title>
-    <style>
-        /* Resetowanie domyślnych stylów przeglądarek */
-        body, h1, p {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Stylizacja nagłówka */
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            text-transform: uppercase;
-        }
-
-        /* Stylizacja sekcji o nas */
-        .about-us {
-            background-color: #f0f0f0;
-            padding: 30px;
-        }
-
-        /* Stylizacja tekstu w sekcji o nas */
-        .about-us p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        /* Stylizacja sekcji usług */
-        .services {
-            padding: 40px 0;
-        }
-
-        .service {
-            text-align: center;
-            margin: 0 auto;
-            max-width: 300px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-        }
-
-        .service h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        /* Stylizacja stopki */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <title>Lakiernia Proszkowa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Lakiernia Samochodowa XYZ</h1>
-        <p>Najlepsza jakość usług lakierniczych dla Twojego samochodu</p>
-    </header>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="content-wrapper">
+        <header>
+            <h1>Witamy w naszej lakierni proszkowej</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Usługi</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>O nas</h2>
+            <p>Nasza lakiernia proszkowa specjalizuje się w profesjonalnym malowaniu proszkowym różnych rodzajów powierzchni. Zapewniamy wysoką jakość usług i konkurencyjne ceny.</p>
+        </main>
+        <section>
+            <h2>Usługi</h2>
+            <ul>
+                <li>Malowanie proszkowe metalowych elementów</li>
+                <li>Przygotowanie powierzchni przed malowaniem</li>
+                <li>Malowanie proszkowe na życzenie klienta</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Galeria</h2>
+            <div class="image-gallery">
+                <!-- Tu dodaj zdjęcia z galerii -->
+            </div>
+        </section>
+        <section>
+            <h2>Kontakt</h2>
+            <p>Masz pytania? Skontaktuj się z nami:</p>
+            <address>
+                Email: <a href="mailto:info@lakierniaproszkowa.pl">info@lakierniaproszkowa.pl</a><br>
+                Telefon: <a href="tel:+48123456789">+48 12 345 67 89</a>
+            </address>
+        </section>
+    </div>
 
-    <section class="about-us">
-        <h2>O nas</h2>
-        <p>Nasza lakiernia samochodowa specjalizuje się w profesjonalnym malowaniu i naprawach powłok lakierowych. Mamy wieloletnie doświadczenie w branży i korzystamy tylko z najwyższej jakości materiałów.</p>
-    </section>
-
-    <section class="services">
-        <div class="service">
-            <h2>Malowanie</h2>
-            <p>Malujemy samochody w dowolnym kolorze i stylu, dostosowanym do Twoich preferencji.</p>
-        </div>
-        <div class="service">
-            <h2>Naprawy powłok</h2>
-            <p>Profesjonalnie naprawiamy wszelkie uszkodzenia powłok lakierowych, w tym rysy i odpryski.</p>
-        </div>
-        <div class="service">
-            <h2>Restauracje</h2>
-            <p>Przywracamy blask i świeżość lakieru na starych samochodach, realizując kompleksowe prace restauracyjne.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Kontakt: info@lakierniaxyz.pl | Telefon: (123) 456-7890</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
